@@ -39,6 +39,7 @@ function HowItWorks() {
       {/* BACKGROUND GLOW */}
       <div className="absolute left-1/2 top-40 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-yellow-100 blur-3xl"></div>
 
+    
       {/* DOT PATTERN LEFT */}
       <div className="absolute left-16 top-24 hidden lg:grid grid-cols-4 gap-3 opacity-40">
 
