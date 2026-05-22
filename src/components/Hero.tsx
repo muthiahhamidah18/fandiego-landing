@@ -1,68 +1,159 @@
 function Hero() {
   return (
-    <section className="bg-black text-white">
-      <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2">
-        
-        <div>
-          <p className="mb-4 text-yellow-400">
-            Platform Umroh Modern
-          </p>
+    <>
+      {/* HERO */}
+      <section className="overflow-hidden bg-white">
 
-          <h1 className="mb-6 text-5xl font-bold leading-tight md:text-7xl">
-            Kelola Jamaah Umroh Tanpa Ribet
-          </h1>
+        <div className="mx-auto grid max-w-[1700px] items-center gap-20 px-16 py-12 lg:grid-cols-2">
 
-          <p className="mb-8 max-w-xl text-lg text-gray-400">
-            Platform digital untuk agen travel dan jamaah dalam mengelola pembayaran, dokumen, dan perjalanan umroh lebih mudah.
-          </p>
+          {/* LEFT */}
+          <div>
 
-          <div className="flex flex-col gap-4 sm:flex-row">
-            
-            <button className="rounded-xl bg-yellow-400 px-6 py-4 font-semibold text-black transition hover:bg-yellow-300">
-              Daftar sebagai Agen
-            </button>
+            {/* TAG */}
+            <div className="mb-6 inline-flex rounded-full bg-yellow-100 px-5 py-2">
+              <p className="text-sm font-semibold text-yellow-700">
+                Platform Umroh Modern
+              </p>
+            </div>
 
-            <button className="rounded-xl border border-yellow-400 px-6 py-4 font-semibold text-yellow-400 transition hover:bg-yellow-400 hover:text-black">
-              Daftar sebagai Jamaah
-            </button>
+            {/* TITLE */}
+            <h1 className="max-w-3xl text-6xl font-bold leading-tight text-black md:text-[88px]">
+              Kelola Jamaah Umroh Tanpa Ribet
+            </h1>
+
+            {/* DESC */}
+            <p className="mt-8 max-w-xl text-xl leading-relaxed text-gray-500">
+              Fandiego membantu agen travel dan jamaah mengelola pembayaran,
+              dokumen, paket perjalanan, hingga keberangkatan dalam satu platform.
+            </p>
+
+            {/* BUTTON */}
+            <div className="mt-10 flex flex-col gap-5 sm:flex-row">
+
+              <button className="rounded-2xl bg-black px-10 py-5 text-lg font-semibold text-yellow-400 transition hover:bg-neutral-800">
+                Daftar sebagai Agen
+              </button>
+
+              <button className="rounded-2xl border-2 border-black px-10 py-5 text-lg font-semibold text-black transition hover:bg-black hover:text-yellow-400">
+                Daftar sebagai Jamaah
+              </button>
+
+            </div>
 
           </div>
 
-          <div className="mt-10 flex gap-10">
+
+          {/* RIGHT */}
+          <div className="relative flex justify-end">
+
+            {/* GLOW */}
+            <div className="absolute right-20 top-20 h-[500px] w-[500px] rounded-full bg-yellow-200/50 blur-3xl"></div>
+
+            {/* IMAGE CONTAINER */}
+            <div className="relative overflow-hidden rounded-[50px]">
+
+              {/* GRADIENT OVERLAY */}
+              <div className="absolute inset-0 z-20 bg-gradient-to-l from-transparent via-transparent to-white/20"></div>
+
+              {/* IMAGE */}
+              <img
+                src="/foto1.jpg"
+                alt="Fandiego Hero"
+                className="relative z-10 w-[750px] max-w-full object-contain shadow-2xl"
+              />
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      {/* SOCIAL PROOF */}
+      <section className="border-y border-gray-200 bg-white">
+
+        <div className="mx-auto grid max-w-[1700px] grid-cols-2 gap-10 px-10 py-8 md:grid-cols-4">
+
+          {/* ITEM */}
+          <div className="flex items-center justify-center gap-4">
+
+            <div className="text-4xl">
+              👥
+            </div>
+
             <div>
-              <h2 className="text-3xl font-bold text-yellow-400">
+              <h3 className="text-4xl font-bold text-black">
                 500+
-              </h2>
-              <p className="text-gray-400">
-                Agen Travel
+              </h3>
+
+              <p className="mt-1 text-gray-500">
+                Agen Terdaftar
               </p>
+            </div>
+
+          </div>
+
+          {/* ITEM */}
+          <div className="flex items-center justify-center gap-4">
+
+            <div className="text-4xl">
+              🧳
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-yellow-400">
-                10K+
-              </h2>
-              <p className="text-gray-400">
-                Jamaah
+              <h3 className="text-4xl font-bold text-black">
+                10.000+
+              </h3>
+
+              <p className="mt-1 text-gray-500">
+                Jamaah Terkelola
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center">
-          <div className="rounded-3xl border border-yellow-400/20 bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 p-8 shadow-2xl shadow-yellow-400/10">
-            
-            <img
-              src="/foto1.jpg"
-              alt="Dashboard"
-              className="rounded-2xl"
-            />
 
           </div>
+
+          {/* ITEM */}
+          <div className="flex items-center justify-center gap-4">
+
+            <div className="text-4xl">
+              ⭐
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-black">
+                98%
+              </h3>
+
+              <p className="mt-1 text-gray-500">
+                Kepuasan Jamaah
+              </p>
+            </div>
+
+          </div>
+
+          {/* ITEM */}
+          <div className="flex items-center justify-center gap-4">
+
+            <div className="text-4xl">
+              💳
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-black">
+                1–3x
+              </h3>
+
+              <p className="mt-1 text-gray-500">
+                Cicilan Fleksibel
+              </p>
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
 
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-12 py-7">
+      <div className="mx-auto flex max-w-[1700px] items-center justify-between px-16 py-7">
 
         {/* LOGO */}
         <img
