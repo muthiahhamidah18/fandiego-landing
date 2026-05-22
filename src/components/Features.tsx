@@ -37,7 +37,7 @@ function Features() {
   return (
     <section
       id="features"
-      className="bg-white py-32"
+      className="bg-white pt-28 pb-16"
     >
 
       <div className="mx-auto max-w-[1700px] px-16">
