@@ -38,7 +38,7 @@ function Testimonials() {
       <div className="absolute -right-20 top-10 h-[500px] w-[500px] rounded-full bg-yellow-100/70 blur-3xl"></div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1700px] px-16">
+      <div className="relative z-20 mx-auto max-w-[1400px] px-16">
 
         {/* TOP */}
         <div className="text-center">

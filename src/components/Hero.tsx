@@ -4,7 +4,7 @@ function Hero() {
       {/* HERO */}
       <section className="overflow-hidden bg-white">
 
-        <div className="mx-auto grid max-w-[1700px] items-center gap-20 px-16 py-12 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-[1400px] items-center gap-20 px-16 py-12 lg:grid-cols-2">
 
           {/* LEFT */}
           <div>
@@ -17,7 +17,7 @@ function Hero() {
             </div>
 
             {/* TITLE */}
-            <h1 className="max-w-3xl text-6xl font-bold leading-tight text-black md:text-[88px]">
+            <h1 className="max-w-3xl text-5xl font-bold leading-tight text-black md:text-6xl lg:text-7xl">
               Kelola Jamaah Umroh Tanpa Ribet
             </h1>
 
@@ -72,7 +72,7 @@ function Hero() {
         {/* SOCIAL PROOF */}
         <section className="border-y border-gray-200 bg-white">
 
-          <div className="mx-auto grid max-w-[1700px] grid-cols-2 gap-10 px-10 py-8 md:grid-cols-4">
+          <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-10 px-10 py-8 md:grid-cols-4">
 
             {/* ITEM */}
             <div className="flex items-center justify-center gap-4">

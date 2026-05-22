@@ -114,7 +114,7 @@ function ContactForm() {
       {/* GLOW */}
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-100 blur-3xl opacity-40"></div>
 
-      <div className="relative z-20 mx-auto max-w-[1700px] px-16">
+      <div className="relative z-20 mx-auto max-w-[1400px] px-16">
 
         {/* CONTAINER */}
         <div className="relative overflow-hidden rounded-[20px] border border-gray-200 shadow-sm">

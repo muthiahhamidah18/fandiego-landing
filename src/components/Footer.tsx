@@ -8,7 +8,7 @@ function Footer() {
         <div className="absolute right-0 bottom-0 h-full w-full bg-[radial-gradient(circle_at_bottom_right,_rgba(255,214,10,0.1),transparent_35%)]"></div>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-[1700px] px-16 py-16">
+      <div className="relative z-10 mx-auto max-w-[1400px] px-16 py-16">
 
         {/* TOP */}
         <div className="grid gap-14 border-b border-white/10 pb-12 lg:grid-cols-4">

@@ -40,7 +40,7 @@ function Features() {
       className="bg-white pt-28 pb-16"
     >
 
-      <div className="mx-auto max-w-[1700px] px-16">
+      <div className="mx-auto max-w-[1400px] px-16">
 
         {/* TOP */}
         <div className="text-center">
