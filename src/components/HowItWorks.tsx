@@ -35,13 +35,9 @@ function HowItWorks() {
       id="how"
       className="relative overflow-hidden bg-[#fafafa] pt-16 pb-28"
     >
-
-      {/* BACKGROUND GLOW */}
-      <div className="absolute left-1/2 top-40 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-yellow-100 blur-3xl"></div>
-
     
       {/* DOT PATTERN LEFT */}
-      <div className="absolute left-16 top-24 hidden lg:grid grid-cols-4 gap-3 opacity-40">
+      <div className="absolute left-16 top-24 hidden lg:grid grid-cols-4 gap-3 opacity-60">
 
         {
           Array.from({ length: 16 }).map((_, index) => (
@@ -55,7 +51,7 @@ function HowItWorks() {
       </div>
 
       {/* DOT PATTERN RIGHT */}
-      <div className="absolute bottom-24 right-16 hidden lg:grid grid-cols-4 gap-3 opacity-40">
+      <div className="absolute bottom-24 right-16 hidden lg:grid grid-cols-4 gap-3 opacity-60">
 
         {
           Array.from({ length: 16 }).map((_, index) => (

@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Features from "./components/Features"
 import HowItWorks from "./components/HowItWorks"
 import Testimonials from "./components/Testimonials"
+import ContactForm from "./components/ContactForm"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <HowItWorks />
       <Testimonials />
+      <ContactForm />
     </div>
   )
 }
