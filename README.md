@@ -59,6 +59,8 @@ npm run dev
 npm run build
 ```
 
+Live Demo:
+https://fandiego-landing.vercel.app/
 ---
 
 ## Author
