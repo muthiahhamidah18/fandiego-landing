@@ -8,57 +8,58 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
 
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 md:px-10 lg:px-16">
+      {/* CONTAINER */}
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-10">
 
         {/* LOGO */}
         <img
           src="/logo.jpg"
           alt="Fandiego Logo"
-          className="h-12 w-auto md:h-14 lg:h-16"
+          className="h-10 w-auto sm:h-12 lg:h-14"
         />
 
-        {/* MENU DESKTOP */}
+        {/* DESKTOP MENU */}
         <div className="hidden items-center gap-10 lg:flex">
 
           <a
             href="#features"
-            className="text-lg font-medium text-black transition hover:text-yellow-500"
+            className="text-base font-medium text-black transition hover:text-yellow-500"
           >
             Fitur
           </a>
 
           <a
             href="#how"
-            className="text-lg font-medium text-black transition hover:text-yellow-500"
+            className="text-base font-medium text-black transition hover:text-yellow-500"
           >
             Cara Kerja
           </a>
 
           <a
             href="#testimonials"
-            className="text-lg font-medium text-black transition hover:text-yellow-500"
+            className="text-base font-medium text-black transition hover:text-yellow-500"
           >
             Testimoni
           </a>
 
           <a
             href="#contact"
-            className="text-lg font-medium text-black transition hover:text-yellow-500"
+            className="text-base font-medium text-black transition hover:text-yellow-500"
           >
             Kontak
           </a>
 
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="flex items-center gap-5 lg:gap-10">
+        {/* RIGHT */}
+        <div className="flex items-center">
 
           {/* BUTTON DESKTOP */}
-          <button className="hidden rounded-2xl bg-black px-7 py-3 text-base font-semibold text-yellow-400 transition hover:bg-neutral-800 lg:block">
+          <button className="hidden rounded-xl bg-black px-6 py-3 text-sm font-semibold text-yellow-400 transition hover:bg-neutral-800 lg:block">
             Daftar Sekarang
           </button>
 
-          {/* HAMBURGER */}
+          {/* MOBILE BUTTON */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden"
@@ -66,8 +67,8 @@ function Navbar() {
 
             {
               isOpen
-                ? <X size={32} className="text-black" />
-                : <Menu size={32} className="text-black" />
+                ? <X size={28} className="text-black" />
+                : <Menu size={28} className="text-black" />
             }
 
           </button>
@@ -79,14 +80,15 @@ function Navbar() {
       {/* MOBILE MENU */}
       {
         isOpen && (
+
           <div className="border-t border-gray-200 bg-white lg:hidden">
 
-            <div className="flex flex-col gap-6 px-6 py-8">
+            <div className="flex flex-col gap-5 px-6 py-6">
 
               <a
                 href="#features"
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-black transition hover:text-yellow-500"
+                className="text-base font-medium text-black"
               >
                 Fitur
               </a>
@@ -94,7 +96,7 @@ function Navbar() {
               <a
                 href="#how"
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-black transition hover:text-yellow-500"
+                className="text-base font-medium text-black"
               >
                 Cara Kerja
               </a>
@@ -102,7 +104,7 @@ function Navbar() {
               <a
                 href="#testimonials"
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-black transition hover:text-yellow-500"
+                className="text-base font-medium text-black"
               >
                 Testimoni
               </a>
@@ -110,19 +112,19 @@ function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-black transition hover:text-yellow-500"
+                className="text-base font-medium text-black"
               >
                 Kontak
               </a>
 
-              {/* BUTTON MOBILE */}
-              <button className="mt-2 rounded-2xl bg-black px-7 py-4 text-lg font-semibold text-yellow-400 transition hover:bg-neutral-800">
+              <button className="mt-2 rounded-xl bg-black px-6 py-3 text-base font-semibold text-yellow-400">
                 Daftar Sekarang
               </button>
 
             </div>
 
           </div>
+
         )
       }
 

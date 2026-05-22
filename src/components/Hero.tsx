@@ -4,37 +4,37 @@ function Hero() {
       {/* HERO */}
       <section className="overflow-hidden bg-white">
 
-        <div className="mx-auto grid max-w-[1400px] items-center gap-20 px-16 py-12 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 py-10 sm:px-6 lg:grid-cols-2 lg:px-10 lg:py-16">
 
           {/* LEFT */}
-          <div>
+          <div className="order-2 lg:order-1">
 
             {/* TAG */}
-            <div className="mb-6 inline-flex rounded-full bg-yellow-100 px-5 py-2">
-              <p className="text-sm font-semibold text-yellow-700">
+            <div className="mb-5 inline-flex rounded-full bg-yellow-100 px-4 py-2">
+              <p className="text-xs font-semibold text-yellow-700 sm:text-sm">
                 Platform Umroh Modern
               </p>
             </div>
 
             {/* TITLE */}
-            <h1 className="max-w-3xl text-5xl font-bold leading-tight text-black md:text-6xl lg:text-7xl">
+            <h1 className="max-w-2xl text-4xl font-bold leading-tight text-black sm:text-5xl lg:text-6xl">
               Kelola Jamaah Umroh Tanpa Ribet
             </h1>
 
             {/* DESC */}
-            <p className="mt-8 max-w-xl text-xl leading-relaxed text-gray-500">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-500 sm:text-lg">
               Fandiego membantu agen travel dan jamaah mengelola pembayaran,
               dokumen, paket perjalanan, hingga keberangkatan dalam satu platform.
             </p>
 
             {/* BUTTON */}
-            <div className="mt-10 flex flex-col gap-5 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
 
-              <button className="rounded-2xl bg-black px-10 py-5 text-lg font-semibold text-yellow-400 transition hover:bg-neutral-800">
+              <button className="rounded-xl bg-black px-7 py-4 text-base font-semibold text-yellow-400 transition hover:bg-neutral-800">
                 Daftar sebagai Agen
               </button>
 
-              <button className="rounded-2xl border-2 border-black px-10 py-5 text-lg font-semibold text-black transition hover:bg-black hover:text-yellow-400">
+              <button className="rounded-xl border-2 border-black px-7 py-4 text-base font-semibold text-black transition hover:bg-black hover:text-yellow-400">
                 Daftar sebagai Jamaah
               </button>
 
@@ -42,117 +42,120 @@ function Hero() {
 
           </div>
 
-
           {/* RIGHT */}
-          <div className="relative flex justify-end">
+          <div className="order-1 lg:order-2">
 
-            {/* GLOW */}
-            <div className="absolute right-20 top-20 h-[500px] w-[500px] rounded-full bg-yellow-200/50 blur-3xl"></div>
+            <div className="relative mx-auto max-w-[600px]">
 
-            {/* IMAGE CONTAINER */}
-            <div className="relative overflow-hidden rounded-[50px]">
-
-              {/* GRADIENT OVERLAY */}
-              <div className="absolute inset-0 z-20 bg-gradient-to-l from-transparent via-transparent to-white/20"></div>
+              {/* GLOW */}
+              <div className="absolute inset-0 rounded-full bg-yellow-200/40 blur-3xl"></div>
 
               {/* IMAGE */}
-              <img
-                src="/foto1.jpg"
-                alt="Fandiego Hero"
-                className="relative z-10 w-[750px] max-w-full object-contain shadow-2xl"
-              />
+              <div className="relative overflow-hidden rounded-[28px] sm:rounded-[40px]">
+
+                {/* OVERLAY */}
+                <div className="absolute inset-0 z-10 bg-gradient-to-l from-transparent via-transparent to-white/10"></div>
+
+                <img
+                  src="/foto1.jpg"
+                  alt="Fandiego Hero"
+                  className="relative z-0 w-full object-cover shadow-2xl"
+                />
+
+              </div>
 
             </div>
 
           </div>
+
         </div>
 
       </section>
 
-        {/* SOCIAL PROOF */}
-        <section className="border-y border-gray-200 bg-white">
+      {/* SOCIAL PROOF */}
+      <section className="border-y border-gray-200 bg-white">
 
-          <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-10 px-10 py-8 md:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-8 sm:px-6 lg:grid-cols-4 lg:px-10">
 
-            {/* ITEM */}
-            <div className="flex items-center justify-center gap-4">
+          {/* ITEM */}
+          <div className="flex items-center gap-4">
 
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
-                <i className="ri-team-line text-2xl text-black"></i>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-bold text-black">
-                  500+
-                </h3>
-
-                <p className="mt-1 text-gray-500">
-                  Agen Terdaftar
-                </p>
-              </div>
-
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 sm:h-14 sm:w-14">
+              <i className="ri-team-line text-xl text-black sm:text-2xl"></i>
             </div>
 
-            {/* ITEM */}
-            <div className="flex items-center justify-center gap-4">
+            <div>
+              <h3 className="text-2xl font-bold text-black sm:text-3xl">
+                500+
+              </h3>
 
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
-                <i className="ri-luggage-cart-line text-2xl text-black"></i>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-bold text-black">
-                  10.000+
-                </h3>
-
-                <p className="mt-1 text-gray-500">
-                  Jamaah Terkelola
-                </p>
-              </div>
-
-            </div>
-
-            {/* ITEM */}
-            <div className="flex items-center justify-center gap-4">
-
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
-                <i className="ri-star-line text-2xl text-black"></i>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-bold text-black">
-                  98%
-                </h3>
-
-                <p className="mt-1 text-gray-500">
-                  Kepuasan Jamaah
-                </p>
-              </div>
-
-            </div>
-
-            {/* ITEM */}
-            <div className="flex items-center justify-center gap-4">
-
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
-                <i className="ri-bank-card-line text-2xl text-black"></i>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-bold text-black">
-                  1–3x
-                </h3>
-
-                <p className="mt-1 text-gray-500">
-                  Cicilan Fleksibel
-                </p>
-              </div>
-
+              <p className="text-sm text-gray-500 sm:text-base">
+                Agen Terdaftar
+              </p>
             </div>
 
           </div>
 
-        </section>
+          {/* ITEM */}
+          <div className="flex items-center gap-4">
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 sm:h-14 sm:w-14">
+              <i className="ri-luggage-cart-line text-xl text-black sm:text-2xl"></i>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-black sm:text-3xl">
+                10.000+
+              </h3>
+
+              <p className="text-sm text-gray-500 sm:text-base">
+                Jamaah Terkelola
+              </p>
+            </div>
+
+          </div>
+
+          {/* ITEM */}
+          <div className="flex items-center gap-4">
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 sm:h-14 sm:w-14">
+              <i className="ri-star-line text-xl text-black sm:text-2xl"></i>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-black sm:text-3xl">
+                98%
+              </h3>
+
+              <p className="text-sm text-gray-500 sm:text-base">
+                Kepuasan Jamaah
+              </p>
+            </div>
+
+          </div>
+
+          {/* ITEM */}
+          <div className="flex items-center gap-4">
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 sm:h-14 sm:w-14">
+              <i className="ri-bank-card-line text-xl text-black sm:text-2xl"></i>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-black sm:text-3xl">
+                1–3x
+              </h3>
+
+              <p className="text-sm text-gray-500 sm:text-base">
+                Cicilan Fleksibel
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
     </>
   )
 }

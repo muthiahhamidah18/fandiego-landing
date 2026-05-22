@@ -31,44 +31,44 @@ function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden bg-white pt-20 pb-32"
+      className="relative overflow-hidden bg-white py-16 sm:py-20"
     >
 
       {/* GLOW */}
-      <div className="absolute -right-20 top-10 h-[500px] w-[500px] rounded-full bg-yellow-100/70 blur-3xl"></div>
+      <div className="absolute -right-20 top-10 h-[350px] w-[350px] rounded-full bg-yellow-100/70 blur-3xl sm:h-[500px] sm:w-[500px]"></div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1400px] px-16">
+      <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
 
         {/* TOP */}
         <div className="text-center">
 
           {/* LABEL */}
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-yellow-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-yellow-500 sm:text-sm">
             Testimoni
           </p>
 
           {/* TITLE */}
-          <h2 className="mt-5 text-5xl font-bold tracking-tight text-black md:text-6xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-black sm:text-4xl lg:text-5xl">
             Apa Kata Mereka?
           </h2>
 
           {/* SUBTEXT */}
-          <p className="mx-auto mt-6 max-w-2xl text-xl leading-relaxed text-gray-500">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-500 sm:text-lg">
             Dipercaya oleh agen travel dan jamaah untuk mengelola perjalanan umroh dengan lebih mudah.
           </p>
 
         </div>
 
         {/* GRID */}
-        <div className="mt-20 grid gap-8 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
 
           {
             testimonials.map((testimonial, index) => (
 
               <div
                 key={index}
-                className="group rounded-[32px] border border-gray-200 bg-white p-10 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="group rounded-[28px] border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8"
               >
 
                 {/* STARS */}
@@ -79,7 +79,7 @@ function Testimonials() {
 
                       <Star
                         key={starIndex}
-                        size={20}
+                        size={18}
                         className="fill-yellow-400 text-yellow-400"
                       />
 
@@ -89,17 +89,17 @@ function Testimonials() {
                 </div>
 
                 {/* QUOTE */}
-                <p className="mt-8 text-xl leading-relaxed text-gray-600">
+                <p className="mt-6 text-base leading-relaxed text-gray-600 sm:text-lg">
                   "
                   {testimonial.quote}
                   "
                 </p>
 
                 {/* PROFILE */}
-                <div className="mt-10 flex items-center gap-4">
+                <div className="mt-8 flex items-center gap-4">
 
                   {/* AVATAR */}
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-yellow-400 text-xl font-bold text-black shadow-md">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400 text-lg font-bold text-black shadow-md sm:h-16 sm:w-16 sm:text-xl">
 
                     {testimonial.initials}
 
@@ -108,11 +108,11 @@ function Testimonials() {
                   {/* INFO */}
                   <div>
 
-                    <h3 className="text-xl font-bold text-black">
+                    <h3 className="text-lg font-bold text-black sm:text-xl">
                       {testimonial.name}
                     </h3>
 
-                    <p className="mt-1 text-gray-500">
+                    <p className="mt-1 text-sm text-gray-500 sm:text-base">
                       {testimonial.role}
                     </p>
 
