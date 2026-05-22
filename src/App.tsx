@@ -4,6 +4,7 @@ import Features from "./components/Features"
 import HowItWorks from "./components/HowItWorks"
 import Testimonials from "./components/Testimonials"
 import ContactForm from "./components/ContactForm"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HowItWorks />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </div>
   )
 }

@@ -36,6 +36,7 @@ function HowItWorks() {
       className="relative overflow-hidden bg-[#fafafa] pt-16 pb-28"
     >
     
+    
       {/* DOT PATTERN LEFT */}
       <div className="absolute left-16 top-24 hidden lg:grid grid-cols-4 gap-3 opacity-60">
 
