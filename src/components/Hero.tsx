@@ -69,90 +69,90 @@ function Hero() {
 
       </section>
 
-      {/* SOCIAL PROOF */}
-      <section className="border-y border-gray-200 bg-white">
+        {/* SOCIAL PROOF */}
+        <section className="border-y border-gray-200 bg-white">
 
-        <div className="mx-auto grid max-w-[1700px] grid-cols-2 gap-10 px-10 py-8 md:grid-cols-4">
+          <div className="mx-auto grid max-w-[1700px] grid-cols-2 gap-10 px-10 py-8 md:grid-cols-4">
 
-          {/* ITEM */}
-          <div className="flex items-center justify-center gap-4">
+            {/* ITEM */}
+            <div className="flex items-center justify-center gap-4">
 
-            <div className="text-4xl">
-              👥
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
+                <i className="ri-team-line text-2xl text-black"></i>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-black">
+                  500+
+                </h3>
+
+                <p className="mt-1 text-gray-500">
+                  Agen Terdaftar
+                </p>
+              </div>
+
             </div>
 
-            <div>
-              <h3 className="text-4xl font-bold text-black">
-                500+
-              </h3>
+            {/* ITEM */}
+            <div className="flex items-center justify-center gap-4">
 
-              <p className="mt-1 text-gray-500">
-                Agen Terdaftar
-              </p>
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
+                <i className="ri-luggage-cart-line text-2xl text-black"></i>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-black">
+                  10.000+
+                </h3>
+
+                <p className="mt-1 text-gray-500">
+                  Jamaah Terkelola
+                </p>
+              </div>
+
+            </div>
+
+            {/* ITEM */}
+            <div className="flex items-center justify-center gap-4">
+
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
+                <i className="ri-star-line text-2xl text-black"></i>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-black">
+                  98%
+                </h3>
+
+                <p className="mt-1 text-gray-500">
+                  Kepuasan Jamaah
+                </p>
+              </div>
+
+            </div>
+
+            {/* ITEM */}
+            <div className="flex items-center justify-center gap-4">
+
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400">
+                <i className="ri-bank-card-line text-2xl text-black"></i>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-black">
+                  1–3x
+                </h3>
+
+                <p className="mt-1 text-gray-500">
+                  Cicilan Fleksibel
+                </p>
+              </div>
+
             </div>
 
           </div>
 
-          {/* ITEM */}
-          <div className="flex items-center justify-center gap-4">
-
-            <div className="text-4xl">
-              🧳
-            </div>
-
-            <div>
-              <h3 className="text-4xl font-bold text-black">
-                10.000+
-              </h3>
-
-              <p className="mt-1 text-gray-500">
-                Jamaah Terkelola
-              </p>
-            </div>
-
-          </div>
-
-          {/* ITEM */}
-          <div className="flex items-center justify-center gap-4">
-
-            <div className="text-4xl">
-              ⭐
-            </div>
-
-            <div>
-              <h3 className="text-4xl font-bold text-black">
-                98%
-              </h3>
-
-              <p className="mt-1 text-gray-500">
-                Kepuasan Jamaah
-              </p>
-            </div>
-
-          </div>
-
-          {/* ITEM */}
-          <div className="flex items-center justify-center gap-4">
-
-            <div className="text-4xl">
-              💳
-            </div>
-
-            <div>
-              <h3 className="text-4xl font-bold text-black">
-                1–3x
-              </h3>
-
-              <p className="mt-1 text-gray-500">
-                Cicilan Fleksibel
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+        </section>
     </>
   )
 }
